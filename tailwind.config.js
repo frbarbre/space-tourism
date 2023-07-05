@@ -8,10 +8,27 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "home-mobile": "url('/backgrounds/background-home-mobile.jpg')",
+        "home-tablet": "url('/backgrounds/background-home-tablet.jpg')",
+        "home-desktop": "url('/backgrounds/background-home-desktop.jpg')",
+
+        "crew-mobile": "url('/backgrounds/background-crew-mobile.jpg')",
+        "crew-tablet": "url('/backgrounds/background-crew-tablet.jpg')",
+        "crew-desktop": "url('/backgrounds/background-crew-desktop.jpg')",
+
+        "destination-mobile": "url('/backgrounds/background-destination-mobile.jpg')",
+        "destination-tablet": "url('/backgrounds/background-destination-tablet.jpg')",
+        "destination-desktop": "url('/backgrounds/background-destination-desktop.jpg')",
+
+        "technology-mobile": "url('/backgrounds/background-technology-mobile.jpg')",
+        "technology-tablet": "url('/backgrounds/background-technology-tablet.jpg')",
+        "technology-desktop": "url('/backgrounds/background-technology-desktop.jpg')",
       },
+      fontFamily: {
+        bellefair: 'var(--font-bellefair)',
+        "barlow-condensed": 'var(--font-barlow-condensed)',
+        barlow: 'var(--font-barlow)'
+      }
     },
   },
   plugins: [],
