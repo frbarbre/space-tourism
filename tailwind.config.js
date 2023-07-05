@@ -28,6 +28,15 @@ module.exports = {
         bellefair: 'var(--font-bellefair)',
         "barlow-condensed": 'var(--font-barlow-condensed)',
         barlow: 'var(--font-barlow)'
+      },
+      colors: {
+        "dark-blue": "#0B0D17",
+        "light-blue": "#D0D6F9",
+        "opaque": "rgba(255, 255, 255, .04)",
+        "opaque-strong": "rgba(255, 255, 255, 0.4)"
+      },
+      minHeight: {
+        "screen-header": "calc(100vh - 136px)"
       }
     },
   },

@@ -1,3 +1,22 @@
+export const navLinks = [
+  {
+    title: "Home",
+    path: "/"
+  },
+  {
+    title: "Destination",
+    path: "/destination"
+  },
+  {
+    title: "Crew",
+    path: "/crew"
+  },
+  {
+    title: "Technology",
+    path: "/technology"
+  }
+]
+
 export const destinations = [
   {
     name: "Moon",
