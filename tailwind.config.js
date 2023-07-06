@@ -36,7 +36,9 @@ module.exports = {
         "opaque-strong": "rgba(255, 255, 255, 0.4)"
       },
       minHeight: {
-        "screen-header": "calc(100vh - 136px)"
+        "screen-header": "calc(100vh - 136px)",
+        "screen-heading": "calc(100vh - 255px)",
+        "screen-heading-tablet": "calc(100vh - 156px)"
       }
     },
   },

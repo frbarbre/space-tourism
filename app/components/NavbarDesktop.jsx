@@ -17,9 +17,9 @@ export default function NavbarDesktop() {
       <Link href={"/"}>
         <img src="/logo.svg" alt="logo-space-tourism" className="max-w-none" />
       </Link>
-      <hr className="hidden lg:block w-full max-w-[473px] bg-opaque-strong h-[1px] ml-[34px] relative z-50 translate-x-[30px]" />
+      <hr className="hidden lg:block w-full max-w-[473px] bg-dark-blue opacity-40 h-[1px] ml-[34px] relative z-50 translate-x-[30px]" />
       <nav className="w-full max-w-[430px] lg:max-w-[830px] bg-opaque backdrop-blur-2xl h-24 flex item-center justify-center">
-        <div className="max-w-[542px] w-full flex justify-between gap-4 mx-8 lg:ml-16">
+        <div className="max-w-[542px] w-full flex justify-between lg:gap-8 md:gap-4 mx-8 lg:ml-16">
           {navLinks.map((link, index) => (
             <Link
               key={nanoid()}
