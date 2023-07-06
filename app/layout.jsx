@@ -5,7 +5,6 @@ import "./globals.css";
 import { Bellefair, Barlow_Condensed, Barlow } from "next/font/google";
 import { usePathname } from "next/navigation";
 import { motion as m } from "framer-motion";
-import Head from "next/head";
 
 const bellefair = Bellefair({
   subsets: ["latin"],
@@ -28,9 +27,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <Head>
+      <head>
         <title>Space Tourism</title>
-      </Head>
+      </head>
       <body
         className={`
         ${bellefair.variable} ${barlowCondensed.variable} ${barlow.variable}
