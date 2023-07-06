@@ -4,6 +4,7 @@ import { Heading } from ".";
 import { crew } from "../constants";
 import { nanoid } from "nanoid";
 import { useState } from "react";
+import { motion as m } from "framer-motion";
 
 export default function CrewPage() {
   const [data, setData] = useState("Douglas Hurley");
@@ -11,7 +12,11 @@ export default function CrewPage() {
   return (
     <div className="p-6 md:pb-0 pt-0 md:px-[38.5px] md:pt-[40px] lg:pl-[166.5px] lg:pr-6 lg:pt-[76px] max-w-[1440px] mx-auto">
       <Heading number={2} text={"Meet your crew"} />
-      <div>
+      <m.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4 }}
+      >
         {crew.map((member) => (
           <div key={nanoid()}>
             {member.name === data && (
@@ -52,7 +57,7 @@ export default function CrewPage() {
             )}
           </div>
         ))}
-      </div>
+      </m.div>
     </div>
   );
 }
