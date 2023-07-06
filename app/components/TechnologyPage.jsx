@@ -41,7 +41,7 @@ export default function TechnologyPage() {
                     {technology.map((link, index) => (
                       <div
                         onClick={() => setData(link.name)}
-                        className={`w-[40px] md:w-[60px] lg:w-[80px] border-[1px] border-solid border-opaque-strong rounded-full aspect-square flex items-center justify-center hover:text-dark-blue hover:bg-opaque-strong transition-all cursor-pointer ${
+                        className={`w-[40px] md:w-[60px] lg:w-[80px] border-[1px] border-solid border-opaque-strong rounded-full aspect-square flex items-center justify-center hover:border-white transition-all cursor-pointer ${
                           link.name === data
                             ? "bg-white text-dark-blue border-white"
                             : ""
